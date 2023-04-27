@@ -357,7 +357,7 @@ void Oneway()
 	        printf("Error: Unable to compile regex pattern.\n");
 	    }
 
-	    while (fgets(line, sizeof(line), tmp)) {
+	    while (fgets(line, sizeof(line), fp)) {
 	        if (regexec(&regex, line, 5, match, 0) == 0) {
 	            int d, m, y, h;
 	            sscanf(line + match[1].rm_so, "%d", &d);

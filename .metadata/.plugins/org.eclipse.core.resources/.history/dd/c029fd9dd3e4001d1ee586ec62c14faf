@@ -357,15 +357,15 @@ void Oneway()
 	        printf("Error: Unable to compile regex pattern.\n");
 	    }
 
-	    while (fgets(line, sizeof(line), tmp)) {
+	    while (fgets(line, sizeof(line), fp)) {
 	        if (regexec(&regex, line, 5, match, 0) == 0) {
 	            int d, m, y, h;
 	            sscanf(line + match[1].rm_so, "%d", &d);
 	            sscanf(line + match[2].rm_so, "%d", &m);
 	            sscanf(line + match[3].rm_so, "%d", &y);
 	            sscanf(line + match[4].rm_so, "%d", &h);
-	            if (d == day && m == month && y == year && h == hours) {
-	                printf("Found date and time: %02d-%02d-%04d %02d:00\n", day, month, year, hours);
+	            if (d == day && m == month && y == year && h == hour) {
+	                printf("Found date and time: %02d-%02d-%04d %02d:00\n", day, month, year, hour);
 	                f = 1;
 	                break;
 	            }
