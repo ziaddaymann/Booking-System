@@ -1,0 +1,19 @@
+/*
+ * mainMenu.h
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: ziadayman
+ */
+
+#ifndef MAINMENU_H_
+#define MAINMENU_H_
+
+#include <stdio.h>
+#include <ctype.h>
+
+void Main_Menu ();
+void Register (*num);
+void Start();
+
+
+#endif /* MAINMENU_H_ */

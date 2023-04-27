@@ -1,0 +1,19 @@
+/*
+ * mainMenu.c
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: ziadayman
+ */
+
+
+#include "mainMenu.h"
+
+void Main_Menu ()
+{
+	switch (num)
+	{
+	//First menu
+	case 0: printf ("****** Welcome to Booking.com ******");
+            printf ("")
+	}
+}

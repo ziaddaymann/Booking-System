@@ -1,0 +1,56 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: ziadayman
+ */
+
+
+#include "stdio.h"
+#include <ctype.h>
+
+void Main_Menu ()
+{
+	printf ("****** Welcome to Booking.com ******\n");
+    printf ("If you want to register please enter 1\n ");
+    printf ("If you already have an account please enter 2\n ");
+}
+
+void Register (*num)
+{
+	int *name , age;
+
+    printf ("Please enter you name \n");
+	gets (name);
+	printf ("Please enter you age \n");
+	scanf ("%d" , &age);
+	if (isdigit(age))
+	{
+		printf ("Wrong age , please enter a valid age\n");
+	}
+}
+
+void Start()
+{
+	int run =1;
+	char input;
+
+	Main_Menu();
+
+	while (run ==1)
+	{
+		scanf ("%c" , &input);
+
+		switch (input)
+		{
+		case 1: Register(&input);
+				break;
+		}
+	}
+}
+
+
+int main()
+{
+		Start();
+}

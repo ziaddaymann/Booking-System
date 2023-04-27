@@ -1,0 +1,115 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: ziadayman
+ */
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+void Main_Menu ()
+{
+	printf ("\n****** Welcome to Booking.com ******\n");
+    printf ("\nIf you want to register please enter a\n");
+    printf ("\nIf you already have an account please enter b\n");
+}
+
+void Register ()
+{
+	FILE *fp;
+	char mail[50];
+	char pass[50];
+	char line[256];
+	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+
+
+	///////////////////////////Mail///////////////////////
+	printf ("Please enter you Email \n");
+	scanf("%s", mail);
+	char *find1 = strchr(mail, '@');
+	char *find2 = strstr(mail, ".com");
+
+	if (find1)
+	{
+		if (find2)
+		{
+			printf ("Valid Mail \n");
+		}
+	}
+
+	else
+	{
+		printf ("Invalid Mail\n");
+		Register();
+	}
+
+	while (fgets(line, sizeof(line), fp) != NULL) {
+	        int num;
+	        if (sscanf(line, "%d", &num) == 1) {
+	            if (num == mail) {
+	                printf ("This Mail is taken\n");
+	                Register();
+	                break;
+	            }
+	        }
+	    }
+	///////////////////////////////////Pass///////////////////////
+
+
+	printf ("Please enter you Password \n");
+	scanf ("%s",pass);
+
+	if (strlen(pass) == 0)
+	{
+		printf ("Invalid Mail\n");
+		Register();
+	}
+
+
+
+	//////////////////////////////////////Adding///////////////////
+
+	fp = fopen(file, "a");
+
+	if (fp == NULL)
+	{
+	        printf("Error opening file %s\n", file);
+	}
+
+	fprintf(fp, "%s\n", mail);
+	fprintf(fp, "%s\n", pass);
+
+	fclose(fp);
+
+
+
+
+}
+
+void Start()
+{
+	int run =1;
+	char input;
+
+	Main_Menu();
+
+	while (run == 1)
+	{
+		scanf (" %c" , &input);
+
+		switch (input)
+		{
+		case 'a': Register();
+				break;
+		}
+	}
+}
+
+
+int main()
+{
+	Start();
+}
