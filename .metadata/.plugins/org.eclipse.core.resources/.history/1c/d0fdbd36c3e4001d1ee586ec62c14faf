@@ -1,0 +1,377 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: ziadayman
+ */
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+void Main_Menu ();
+void Menu();
+void Register ();
+void Log_in ();
+void forget_pass();
+void Website();
+void Oneway();
+void Start();
+
+
+void Main_Menu ()
+{
+	printf ("\n****** Welcome to Booking.com ******\n");
+    printf ("\nIf you want to register please enter a\n");
+    printf ("\nIf you already have an account please enter b\n");
+    printf ("\nIf you forgot your password enter y\n");
+}
+
+void Menu()
+{
+	printf ("\nBook Flight enter a\n");
+    printf ("\nBook Hotel enter b\n");
+    printf ("\nRent a car enter c\n");
+	printf ("\nSign out enter d\n");
+    printf ("\nChange Password enter f\n");
+    printf ("\nDelete your account enter h\n");
+}
+
+void Register ()
+{
+	FILE *fp;
+	char mail[50];
+	char pass[50];
+	char buffer[1024];
+	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+
+	///////////////////////////Mail///////////////////////
+	printf ("Please enter your Email \n");
+	scanf("%s", mail);
+	char *find1 = strchr(mail, '@');
+	char *find2 = strstr(mail, ".com");
+
+	if (find1)
+	{
+		if (find2)
+		{
+
+		}
+	}
+
+	else
+	{
+		printf ("Invalid Mail\n");
+		Register();
+	}
+
+	 fp = fopen(file, "r");
+	    if (fp == NULL)
+	    {
+	        printf("Error opening file %s\n", file);
+	    }
+
+	while (fgets(buffer, sizeof(buffer), fp) != NULL)
+	{
+	        if (strstr(buffer, mail) != NULL)
+	        {
+	            printf("This mail is taken\n");
+	            fclose(fp);
+	            Register();
+	            break;
+	        }
+	    }
+
+	///////////////////////////////////Pass///////////////////////
+
+
+	printf ("Please enter you Password \n");
+	scanf ("%s",pass);
+
+	if (strlen(pass) == 0)
+	{
+		printf ("Invalid Password\n");
+		Register();
+	}
+
+
+
+	//////////////////////////////////////Adding///////////////////
+
+	fp = fopen(file, "a");
+
+		if (fp == NULL)
+		{
+		        printf("Error opening file %s\n", file);
+		}
+		fprintf(fp, "%s:%s\n", mail, pass);
+
+	fclose(fp);
+
+	printf ("\nSign up successful\n");
+}
+
+void Log_in ()
+{
+	FILE *fp;
+	char mail[50];
+	char pass[50];
+	char buffer[1024];
+	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+
+
+	printf ("Please enter your Email \n");
+	scanf("%s", mail);
+
+	char *find1 = strchr(mail, '@');
+	char *find2 = strstr(mail, ".com");
+
+	if (find1)
+	{
+		if (find2)
+		{
+
+		}
+	}
+
+	else
+	{
+		printf ("Invalid Mail\n");
+		Register();
+	}
+
+	printf ("Please enter the password\n");
+	scanf("%s",pass);
+
+	if (strlen(pass) == 0)
+	{
+		printf ("Invalid Password\n");
+		Register();
+	}
+
+
+
+	 fp = fopen(file, "r");
+	    if (fp == NULL)
+	    {
+	        printf("Error opening file %s\n", file);
+	    }
+
+	    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+	    {
+
+	        char *e = strtok(buffer, ":");
+	        char *p = strtok(NULL, "\n");
+
+
+	        if (strcmp(e, mail) == 0 && strcmp(p, pass) == 0)
+	        {
+	            printf("\nLogin successful\n");
+	            fclose(fp);
+	            break;
+	        }
+	        else
+	        {
+	        	printf ("\nLogin unsuccessful\n ");
+	        	fclose(fp);
+	        	Start();
+	        }
+	    }
+}
+
+
+void forget_pass()
+{
+	FILE *fp;
+	char mail[50];
+	char pass[50];
+	char buffer[1024];
+	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+	char f;
+
+
+	printf ("Please enter your Email \n");
+	scanf("%s", mail);
+
+	char *find1 = strchr(mail, '@');
+	char *find2 = strstr(mail, ".com");
+
+		if (find1)
+		{
+			if (find2)
+			{
+
+			}
+		}
+
+		else
+		{
+			printf ("Invalid Mail\n");
+			Register();
+		}
+
+		 fp = fopen(file, "r");
+		    if (fp == NULL)
+		    {
+		        printf("Error opening file %s\n", file);
+		    }
+
+		    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+		    {
+		        char *ptr = strtok(buffer, ":");
+		        if (strcmp(ptr, mail) == 0)
+		        {
+		            ptr = strtok(NULL, "\n");
+		            strcpy(pass, ptr);
+		            f=1;
+		            break;
+		        }
+
+		        else
+		        {
+		        	printf ("There's no mail like this try again!\n");
+		        	Start();
+		        }
+		    }
+
+		    fclose(fp);
+
+		    if (f)
+		    {
+		         printf("Your password is: %s\n", pass);
+		    }
+		    else
+		    {
+		         printf("Email not found\n");
+		    }
+}
+
+void Oneway()
+{
+	FILE *fp;
+	char From[50];
+	char To[50];
+	char day,month,year;
+	char buffer[1024];
+	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Capitals.txt";
+
+	 fp = fopen(file, "r");
+	    if (fp == NULL)
+	    {
+	        printf("Error opening file %s\n", file);
+	    }
+
+	printf ("\nFrom?\n");
+	printf ("\n Please enter full capital Name with first uppercase letter\n");
+
+	scanf("%s",From);
+
+    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+    {
+        if (strcmp(buffer, From) == 0)
+        {
+        	break;
+        }
+        else
+        {
+        	printf ("\Invalid Capital\n");
+        	Oneway();
+        }
+    }
+
+	printf ("\nTo ?\n");
+	printf ("\nDay ?\n");
+	printf ("\nMonth ?\n");
+	printf ("\nYear ?\n");
+}
+
+void Flight()
+{
+	char input;
+	printf ("\n****** Welcome to Flight Booking ******\n");
+	printf ("\nOne way enter a\n");
+    printf ("\nRound Trip enter b\n");
+    printf ("\nMultiple cities enter c\n");
+
+    scanf("%c",&input);
+
+    switch (input)
+    {
+    case 'a':
+    case 'A':Oneway();
+    break;
+/*
+    case 2: Roundtrip();
+    break;
+
+    case 3: Multiple();
+    break;
+    }
+*/
+}
+}
+
+void Website()
+{
+	int run =1;
+	char input;
+
+	Menu();
+
+	while (run == 1)
+	{
+		scanf("%c",&input);
+
+		switch (input)
+		{
+		case 'a':
+		case 'A': Flight();
+		break;
+		}
+	}
+}
+
+void Start()
+{
+	int run =1;
+	char input;
+
+	Main_Menu();
+
+	while (run == 1)
+	{
+		scanf (" %c" , &input);
+
+		switch (input)
+		{
+		case 'a':
+		case 'A': Register();
+		          Start();
+				break;
+
+		case 'b':
+		case 'B': Log_in();
+		Website();
+		break;
+
+		case 'y':
+		case 'Y': forget_pass();
+		Start();
+		break;
+
+		default:
+			Start();
+			break;
+
+		}
+	}
+}
+
+
+int main()
+{
+	Start();
+}
+
