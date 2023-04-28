@@ -9,23 +9,6 @@ Welcome to our booking system! This is a System that allows users to book flight
 - Book flights, hotels or car rentals with ease.
 - Manage your bookings easily.
 
-## Screenshots
-
-### Home Page
-![Home Page](home-page.png)
-
-### Registration Page
-![Registration Page](registration-page.png)
-
-### Login Page
-![Login Page](login-page.png)
-
-### Booking Page
-![Booking Page](booking-page.png)
-
-### Confirmation Email
-![Confirmation Email](confirmation-email.png)
-
 ## Technologies Used
 
 - C
