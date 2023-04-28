@@ -18,9 +18,8 @@ Welcome to our booking system! This is a System that allows users to book flight
 1. Clone the repository.
 git clone https://github.com/username/repo.git
 
-2. Set up the database by importing the SQL file in database/booking_system.sql.
-3. Configure the database connection in includes/config.php.
-4. Open index.php in your browser.
+2. Change the path of .txt files
+3. Write your changes and send pull request
 
 ## Contributors
 
