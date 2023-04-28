@@ -13,9 +13,6 @@
 #include <ctype.h>
 #include <regex.h>
 
-
-///////////////////////////// ************** Functions Prototype ******************///////////////////////
-
 void Main_Menu ();
 void Menu();
 void Register ();
@@ -55,7 +52,7 @@ void Register ()
 	char mail[50];
 	char pass[50];
 	char buffer[1024];
-	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+	char file[256] = "C:/Users/imann/Desktop/Booking-System-Mybranch/Book1.txt";
 
 	///////////////////////////Mail///////////////////////
 	printf ("Please enter your Email \n");
@@ -128,7 +125,7 @@ void Log_in ()
 	char mail[50];
 	char pass[50];
 	char buffer[1024];
-	char f =0;
+	char f;
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
 
 
@@ -203,7 +200,7 @@ void forget_pass()
 	char pass[50];
 	char buffer[1024];
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
-	char f=0;
+	char f;
 
 
 	printf ("Please enter your Email \n");
@@ -298,7 +295,6 @@ void Oneway()
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Dates.txt";
 	char file1[256] = "/Users/ziadayman/Desktop/Booking Site/Capitals.txt";
 
-
 	printf ("\nFrom?\n");
 	printf ("\nPlease enter full capital Name with first uppercase letter\n");
 
@@ -383,29 +379,18 @@ void Oneway()
 	    }
 
 	    char line[256];
-	    regex_t regex;
-	    regmatch_t match[5];
-	    char* pattern = "([0-9]{2});([0-9]{2});([0-9]{4});([0-9]{2})";
-	    if (regcomp(&regex, pattern, REG_EXTENDED)) {
-	        printf("Error: Unable to compile regex pattern.\n");
-	    }
+	    int days, months, years, hour;
+	    int n_matches;
+	    char* pattern = "%d;%d;%d;%d";
 
 	    while (fgets(line, sizeof(line), tmp)) {
-	        if (regexec(&regex, line, 5, match, 0) == 0) {
-	            int d, m, y, h;
-	            sscanf(line + match[1].rm_so, "%d", &d);
-	            sscanf(line + match[2].rm_so, "%d", &m);
-	            sscanf(line + match[3].rm_so, "%d", &y);
-	            sscanf(line + match[4].rm_so, "%d", &h);
-	            if (d == day && m == month && y == year && h == hours) {
-	                printf("Found date and time: %02d-%02d-%04d %02d:00\n", day, month, year, hours);
-	                f = 1;
-	                break;
-	            }
-	        }
+	    n_matches = sscanf(line, pattern, &days, &months, &years, &hour);
+	    if (n_matches == 4 && days == day && months == month && years == year && hour == hours) {
+	    printf("Found date and time: %02d-%02d-%04d %02d:00\n", days, months, years, hour);
+	    f = 1;
+	    break;
 	    }
-
-	    regfree(&regex);
+	    }
 	    fclose(tmp);
 
 	    printf ("How many Adults ?\n");
@@ -553,4 +538,5 @@ int main()
 	setvbuf(stderr, NULL, _IONBF, 0);
 	Start();
 }
+
 
