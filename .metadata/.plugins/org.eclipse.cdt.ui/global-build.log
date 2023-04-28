@@ -7847,3 +7847,2136 @@ make: Nothing to be done for `all'.
 10:19:41 **** Incremental Build of configuration Debug for project Booking_System ****
 make all 
 make: Nothing to be done for `all'.
+00:34:07 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+00:34:12 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+03:01:11 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Undefined symbols for architecture x86_64:
+  "_curl_easy_cleanup", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_init", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_perform", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_setopt", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_global_cleanup", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_global_init", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_slist_append", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_slist_free_all", referenced from:
+      _sendConfirmationEmail in main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Booking_System] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:02:09 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:02:14 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+03:02:16 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:02:21 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:02:32 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Undefined symbols for architecture x86_64:
+  "_curl_easy_cleanup", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_init", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_perform", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_easy_setopt", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_global_cleanup", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_global_init", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_slist_append", referenced from:
+      _sendConfirmationEmail in main.o
+  "_curl_slist_free_all", referenced from:
+      _sendConfirmationEmail in main.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Booking_System] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:03:41 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:169:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:184:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:169:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:128:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:232:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:248:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:232:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:203:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:09:02 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:98:22: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                while ((c = getch()) != '\r') {
+                            ^
+../main.c:98:22: note: did you mean 'getc'?
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:166:6: note: 'getc' declared here
+int      getc(FILE *);
+         ^
+../main.c:167:17: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    while ((c = getch()) != '\r') {
+                ^
+../main.c:193:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:208:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:193:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:141:8: note: initialize the variable 'f' to silence this warning
+        char f,c;
+              ^
+               = '\0'
+../main.c:256:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:272:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:256:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:227:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:09:39 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:15:10: fatal error: 'conio.h' file not found
+#include <conio.h>
+         ^~~~~~~~~
+1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:10:26 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:99:22: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+                while ((c = getch()) != '\r') {
+                            ^
+../main.c:99:22: note: did you mean 'getc'?
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:166:6: note: 'getc' declared here
+int      getc(FILE *);
+         ^
+../main.c:168:17: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    while ((c = getch()) != '\r')
+                ^
+../main.c:199:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:214:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:199:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:142:8: note: initialize the variable 'f' to silence this warning
+        char f,c;
+              ^
+               = '\0'
+../main.c:262:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:278:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:262:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:233:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:13:12 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:130:2: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+        fp = fopen(file, "a");
+        ^
+../main.c:130:13: error: use of undeclared identifier 'file'
+        fp = fopen(file, "a");
+                   ^
+../main.c:132:3: error: expected identifier or '('
+                if (fp == NULL)
+                ^
+../main.c:136:15: error: expected identifier
+                fprintf(fp, "%s:%s\n", mail, pass);
+                            ^
+../main.c:136:3: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+                fprintf(fp, "%s:%s\n", mail, pass);
+                ^
+../main.c:136:3: error: conflicting types for 'fprintf'
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:155:6: note: previous declaration is here
+int      fprintf(FILE * __restrict, const char * __restrict, ...) __printflike(2, 3);
+         ^
+../main.c:138:2: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+        fclose(fp);
+        ^
+../main.c:138:9: error: a parameter list without types is only allowed in a function definition
+        fclose(fp);
+               ^
+../main.c:141:10: error: expected parameter declarator
+        printf ("\nSign up successful\n");
+                ^
+../main.c:141:10: error: expected ')'
+../main.c:141:9: note: to match this '('
+        printf ("\nSign up successful\n");
+               ^
+../main.c:141:2: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+        printf ("\nSign up successful\n");
+        ^
+../main.c:141:2: error: conflicting types for 'printf'
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:175:6: note: previous declaration is here
+int      printf(const char * __restrict, ...) __printflike(1, 2);
+         ^
+../main.c:142:1: error: extraneous closing brace ('}')
+}
+^
+../main.c:177:17: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    while ((c = getch()) != '\r')
+                ^
+../main.c:177:17: note: did you mean 'getc'?
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:166:6: note: 'getc' declared here
+int      getc(FILE *);
+         ^
+4 warnings and 10 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:14:04 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:179:17: error: implicit declaration of function 'getch' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    while ((c = getch()) != '\r')
+                ^
+../main.c:179:17: note: did you mean 'getc'?
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h:166:6: note: 'getc' declared here
+int      getc(FILE *);
+         ^
+../main.c:210:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:225:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:210:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:153:8: note: initialize the variable 'f' to silence this warning
+        char f,c;
+              ^
+               = '\0'
+../main.c:273:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:289:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:273:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:244:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+03:14:31 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:218:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:233:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:218:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:154:8: note: initialize the variable 'f' to silence this warning
+        char f,c;
+              ^
+               = '\0'
+../main.c:281:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:297:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:281:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:252:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:14:36 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+03:15:33 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:212:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:227:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:212:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:154:8: note: initialize the variable 'f' to silence this warning
+        char f,c;
+              ^
+               = '\0'
+../main.c:275:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:291:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:275:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:246:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:15:34 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+03:16:01 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:167:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:182:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:167:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:126:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:230:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:246:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:230:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:201:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+03:16:03 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:31:08 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:31:13 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:33:34 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:33:36 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:34:21 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:411:7: warning: variable 'childs' is used uninitialized whenever 'if' condition is true [-Wsometimes-uninitialized]
+                if (adults ==0)
+                    ^~~~~~~~~~
+../main.c:424:33: note: uninitialized use occurs here
+            money = (adults * 1000) + (childs * 500);
+                                       ^~~~~~
+../main.c:411:3: note: remove the 'if' if its condition is always false
+                if (adults ==0)
+                ^~~~~~~~~~~~~~~
+../main.c:287:20: note: initialize the variable 'childs' to silence this warning
+        char adults,childs,input;
+                          ^
+                           = '\0'
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:34:21 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:37:54 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:409:15: warning: format specifies type 'char *' but the argument has type 'char (*)[5]' [-Wformat]
+                scanf ("%s",&adults);
+                        ~~  ^~~~~~~
+../main.c:420:16: warning: format specifies type 'char *' but the argument has type 'char (*)[3]' [-Wformat]
+                        scanf ("%s",&childs);
+                                ~~  ^~~~~~~
+../main.c:428:20: warning: format specifies type 'char *' but the argument has type 'char (*)[2]' [-Wformat]
+            scanf ("%c" , &input);
+                    ~~    ^~~~~~
+../main.c:440:17: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                    ~~~~~ ^  ~~~
+../main.c:440:33: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                                    ~~~~~ ^  ~~~
+7 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:38:04 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:409:15: warning: format specifies type 'char *' but the argument has type 'char (*)[5]' [-Wformat]
+                scanf ("%s",&adults);
+                        ~~  ^~~~~~~
+../main.c:428:20: warning: format specifies type 'char *' but the argument has type 'char (*)[2]' [-Wformat]
+            scanf ("%c" , &input);
+                    ~~    ^~~~~~
+../main.c:440:17: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                    ~~~~~ ^  ~~~
+../main.c:440:33: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                                    ~~~~~ ^  ~~~
+6 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:38:08 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:428:20: warning: format specifies type 'char *' but the argument has type 'char (*)[2]' [-Wformat]
+            scanf ("%c" , &input);
+                    ~~    ^~~~~~
+../main.c:440:17: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                    ~~~~~ ^  ~~~
+../main.c:440:33: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                                    ~~~~~ ^  ~~~
+5 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:38:17 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:440:17: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                    ~~~~~ ^  ~~~
+../main.c:440:33: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                                    ~~~~~ ^  ~~~
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:38:24 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:38:26 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:40:17 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:288:6: error: definition of variable with array type needs an explicit size or an initializer
+        int money[];
+            ^
+2 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:41:34 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:41:36 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:42:47 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:42:50 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:44:15 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:420:17: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                        scanf (" %c",childs);
+                                 ~~  ^~~~~~
+../main.c:424:42: error: subscripted value is not an array, pointer, or vector
+            money = (adults[0] * 1000) + (childs[0] * 500);
+                                          ~~~~~~^~
+3 warnings and 1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:44:30 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:420:17: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                        scanf (" %c",childs);
+                                 ~~  ^~~~~~
+../main.c:420:17: warning: variable 'childs' is uninitialized when used here [-Wuninitialized]
+                        scanf (" %c",childs);
+                                     ^~~~~~
+../main.c:287:23: note: initialize the variable 'childs' to silence this warning
+        char adults[1],childs,input[1];
+                             ^
+                              = '\0'
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:46:07 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:409:15: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                scanf ("%c",adults[0]);
+                        ~~  ^~~~~~~~~
+../main.c:420:16: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+                        scanf ("%c",childs[0]);
+                                ~~  ^~~~~~~~~
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:46:13 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:46:54 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:409:15: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+                scanf ("%d",adults[0]);
+                        ~~  ^~~~~~~~~
+../main.c:420:16: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+                        scanf ("%d",childs[0]);
+                                ~~  ^~~~~~~~~
+4 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:47:16 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:47:19 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:48:08 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:49:35 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:425:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:50:56 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:173:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:188:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:173:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:132:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:425:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:52:13 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:172:13: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:187:10: note: uninitialized use occurs here
+            if (f)
+                ^
+../main.c:172:13: note: remove the condition if it is always true
+            while (fgets(buffer, sizeof(buffer), fp) != NULL)
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   1
+../main.c:131:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:234:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:250:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:234:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:205:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:424:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:52:30 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:234:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:250:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:234:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:205:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:424:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:52:38 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:235:14: warning: variable 'f' is used uninitialized whenever 'while' loop exits because its condition is false [-Wsometimes-uninitialized]
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../main.c:251:11: note: uninitialized use occurs here
+                    if (f)
+                        ^
+../main.c:235:14: note: remove the condition if it is always true
+                    while (fgets(buffer,sizeof(buffer), fp) != NULL)
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                           1
+../main.c:206:8: note: initialize the variable 'f' to silence this warning
+        char f;
+              ^
+               = '\0'
+../main.c:425:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:52:52 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:426:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:53:26 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:426:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:53:34 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:426:124: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+            printf ("The total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+                                                                                ~~                                                ^~~~~
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:53:48 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:53:51 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:55:08 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:429:20: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+            scanf ("%s" , input);
+                    ~~    ^~~~~
+../main.c:441:11: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                    ^~~~~~
+../main.c:441:28: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                                     ^~~~~~
+1 warning and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:55:13 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:429:20: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+            scanf ("%s" , input);
+                    ~~    ^~~~~
+../main.c:441:11: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                    ^~~~~~
+../main.c:441:28: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                                     ^~~~~~
+1 warning and 2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:55:20 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:441:11: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                    ^~~~~~
+../main.c:441:28: error: indirection requires pointer operand ('int' invalid)
+                if (*input == 'y' || *input == 'Y')
+                                     ^~~~~~
+2 errors generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+04:55:28 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:412:7: warning: variable 'childs' is used uninitialized whenever 'if' condition is true [-Wsometimes-uninitialized]
+                if (adults ==0)
+                    ^~~~~~~~~~
+../main.c:425:49: note: uninitialized use occurs here
+            money = (int)(((int)adults * 1000) + ((int)childs * 500));
+                                                       ^~~~~~
+../main.c:412:3: note: remove the 'if' if its condition is always false
+                if (adults ==0)
+                ^~~~~~~~~~~~~~~
+../main.c:288:20: note: initialize the variable 'childs' to silence this warning
+        char adults,childs,input;
+                          ^
+                           = '\0'
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:55:45 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:55:47 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+04:56:49 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:57:53 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+04:57:56 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:02:45 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:292:7: warning: variable 'money' set but not used [-Wunused-but-set-variable]
+        char money =0;
+             ^
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:04:09 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:439:9: error: use of undeclared identifier 'send'
+        send = money();
+        ^
+1 error generated.
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+05:04:23 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:319:6: warning: variable 'send' set but not used [-Wunused-but-set-variable]
+        int send;
+            ^
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:04:48 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:04:50 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:05:50 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:05:55 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:07:42 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:07:45 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:08:33 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:08:37 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:12:35 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:294:17: warning: format specifies type 'char *' but the argument has type 'char (*)[1]' [-Wformat]
+    scanf ("%s",&adults);
+            ~~  ^~~~~~~
+../main.c:296:6: warning: comparison of array 'adults' equal to a null pointer is always false [-Wtautological-pointer-compare]
+        if (adults == 0)
+            ^~~~~~    ~
+../main.c:302:13: warning: cast to smaller integer type 'int' from 'char *' [-Wpointer-to-int-cast]
+    money = (int)adults;
+            ^~~~~~~~~~~
+3 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:13:25 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:13:29 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:15:09 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:15:12 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:17:35 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:18:58 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:19:00 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:20:38 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:456:17: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                    ~~~~~ ^  ~~~
+../main.c:456:33: warning: comparison between pointer and integer ('char *' and 'int') [-Wpointer-integer-compare]
+                if (input == 'y' || input == 'Y')
+                                    ~~~~~ ^  ~~~
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:22:39 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:22:43 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:25:22 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:433:81: warning: invalid conversion specifier '\x0a' [-Wformat-invalid-specifier]
+        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is % \n" , From , To , day , month , year , hours , money);
+                                                                              ~~^
+../main.c:433:128: warning: data argument not used by format string [-Wformat-extra-args]
+        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is % \n" , From , To , day , month , year , hours , money);
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                            ^
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:25:27 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:25:30 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:26:27 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:27:09 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:27:14 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:28:04 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:28:17 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:28:19 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:29:00 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:30:10 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:30:17 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+05:30:19 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+05:32:45 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 

@@ -13,6 +13,9 @@
 #include <ctype.h>
 #include <regex.h>
 
+
+///////////////////////////// ************** Functions Prototype ******************///////////////////////
+
 void Main_Menu ();
 void Menu();
 void Register ();
@@ -21,8 +24,11 @@ void forget_pass();
 void Website();
 void Oneway();
 void Flight();
+void Roundtrip();
 void Start();
 
+
+///////////////////////////// ************** Basic Information ******************///////////////////////
 
 void Main_Menu ()
 {
@@ -119,11 +125,10 @@ void Register ()
 
 void Log_in ()
 {
-	FILE *fp;
 	char mail[50];
 	char pass[50];
 	char buffer[1024];
-	char f;
+	char f =0;
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
 
 
@@ -158,7 +163,7 @@ void Log_in ()
 
 
 
-	 fp = fopen(file, "r");
+	FILE *fp = fopen(file, "r");
 	    if (fp == NULL)
 	    {
 	        printf("Error opening file %s\n", file);
@@ -182,6 +187,7 @@ void Log_in ()
 	    if (f)
 	    {
 	    	printf("\nLogin successful\n");
+	    	f=0;
 	    }
 	    else
 	    {
@@ -190,7 +196,6 @@ void Log_in ()
 	    }
 }
 
-
 void forget_pass()
 {
 	FILE *fp;
@@ -198,7 +203,7 @@ void forget_pass()
 	char pass[50];
 	char buffer[1024];
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
-	char f;
+	char f=0;
 
 
 	printf ("Please enter your Email \n");
@@ -246,6 +251,7 @@ void forget_pass()
 		    if (f)
 		    {
 		         printf("Your password is: %s\n", pass);
+		         f=0;
 		    }
 		    else
 		    {
@@ -254,9 +260,35 @@ void forget_pass()
 		    }
 }
 
+void Website()
+{
+	int run =1;
+	char input;
+
+	Menu();
+
+	while (run == 1)
+	{
+		scanf("%c",&input);
+
+		switch (input)
+		{
+		case 'a':
+		case 'A': Flight();
+		break;
+		}
+	}
+}
+
+///////////////////////////// ************** Flight Information ******************///////////////////////
+
 void Oneway()
 {
 	FILE *fp , *tmp;
+	char adults [1],childs[1];
+	char check;
+	int money;
+	char input[1];
 	char From[50];
 	char To[50];
 	int day,month,hours;
@@ -265,6 +297,7 @@ void Oneway()
 	int f=0;
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Dates.txt";
 	char file1[256] = "/Users/ziadayman/Desktop/Booking Site/Capitals.txt";
+
 
 	printf ("\nFrom?\n");
 	printf ("\nPlease enter full capital Name with first uppercase letter\n");
@@ -375,6 +408,30 @@ void Oneway()
 	    regfree(&regex);
 	    fclose(tmp);
 
+	    printf ("How many Adults ?\n");
+	    scanf ("%s",adults);
+
+	    check = atoi(adults);
+		if (check == 0)
+		{
+			printf ("Error\n");
+			Oneway();
+		}
+
+		else
+		{
+		    printf ("How many Childs ?\n");
+		    scanf ("%s",childs);
+		}
+
+	    money = (check * 1000) + (atoi(childs) *500);
+
+        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+
+
+	    printf ("\nDo you want to continue Y/N\n");
+
+        scanf ("%s",input);
 
 
 	    if (f)
@@ -383,9 +440,17 @@ void Oneway()
 	    	Oneway();
 	    	f=0;
 	    }
+
 	    else
 	    {
-	    	printf ("\nBooked\n ");
+	    	if ((strcmp(input, "y") == 0) || (strcmp(input, "Y") == 0))
+	    	{
+	    		printf ("\nBooked\n ");
+	    	}
+	    	else
+	    	{
+	    		Website();
+	    	}
 	    }
 
 	    tmp = fopen(file, "a");
@@ -394,12 +459,19 @@ void Oneway()
 	    		{
 	    		        printf("Error opening file %s\n", file);
 	    		}
-	    		fprintf(fp, "\n%d;%d;%d;%d\n", day, month , year , hours);
+	    		fprintf(fp, "%d;%d;%d;%d\n", day, month , year , hours);
 
 	    	fclose(tmp);
 
+	    	Website();
 
 
+
+
+}
+
+void Roundtrip()
+{
 
 }
 
@@ -421,10 +493,10 @@ void Flight()
     case 'a':
     case 'A':Oneway();
     break;
-/*
+
     case 2: Roundtrip();
     break;
-
+/*
     case 3: Multiple();
     break;
     }
@@ -433,25 +505,10 @@ void Flight()
 }
 }
 
-void Website()
-{
-	int run =1;
-	char input;
 
-	Menu();
 
-	while (run == 1)
-	{
-		scanf("%c",&input);
 
-		switch (input)
-		{
-		case 'a':
-		case 'A': Flight();
-		break;
-		}
-	}
-}
+///////////////////////////// ************** Start ******************////////////////////////////////////
 
 void Start()
 {
@@ -492,6 +549,8 @@ void Start()
 
 int main()
 {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
 	Start();
 }
 
