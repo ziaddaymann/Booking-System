@@ -314,7 +314,7 @@ void Oneway()
 	FILE *fp , *tmp;
 	char adults [1],childs[1],degree[1];
 	char check,check1,ch;
-	long long money;
+	int money;
 	char input[1];
 	char From[50];
 	char To[50];
@@ -479,7 +479,7 @@ void Oneway()
 		}
 
 
-        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %lld \n" , From , To , day , month , year , hours , money);
+        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
 
 
 	    printf ("\nDo you want to continue Y/N\n");
@@ -520,9 +520,9 @@ void Roundtrip()
 	FILE *fp , *tmp;
 	char adults [1],childs[1],degree[1],degree1[1];
 	char check,check1,ch,ch1;
-	long long money;
-	long long money1;
-	long long total;
+	int money;
+	int money1;
+	int total;
 	char input[1];
 	char From[50];
 	char To[50];
@@ -751,10 +751,10 @@ void Roundtrip()
 		total = money+money1;
 
 
-        printf ("\nThe Going trip money from %s to %s at %02d-%02d-%04d %02d:00 is %lld \n" , From , To , day , month , year , hours , money);
-        printf ("\nThe Coming Back trip money from %s to %s at %02d-%02d-%04d %02d:00 is %lld \n" , To , From , day1 , month1 , year1 , hours1 , money1);
+        printf ("\nThe Going trip money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+        printf ("\nThe Coming Back trip money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , To , From , day1 , month1 , year1 , hours1 , money1);
 
-        printf ("\nThe total money is %lld\n" ,total);
+        printf ("\nThe total money is %d\n" ,total);
 
 	    printf ("\nDo you want to continue Y/N\n");
 
@@ -791,38 +791,34 @@ void Roundtrip()
 
 void Multiple()
 {
-	char no_of_cities[1],check;
-	int f=0,i;
-	long long total =0;
+	char no_of_cities;
+	FILE *fp , *tmp;
+	char adults [1],childs[1],degree[1];
+	char check,check1,ch;
+	int money;
+	char input[1];
+	char buffer[1024];
+	int f=0;
+	char i;
 	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Dates.txt";
 	char file1[256] = "/Users/ziadayman/Desktop/Booking Site/Capitals.txt";
 	printf ("How Many cities do you want\n");
-	scanf ("%s",no_of_cities);
+	scanf ("%c",no_of_cities);
 
-	check = atoi(no_of_cities);
-	long long money[check];
+	char day[no_of_cities][1],month[no_of_cities][1],hours[no_of_cities][1];
+	int year[no_of_cities][1];
+	char From[no_of_cities][50];
+	char To[no_of_cities][50];
 
-	for (i=1;i<=check;i++)
+	for (i=0;i<no_of_cities;i++)
 	{
-		FILE *fp , *tmp;
-		char adults [1],childs[1],degree[1];
-		char check,check1,ch;
-		char input[1];
-		char From[50];
-		char To[50];
-		int day,month,hours;
-		int year;
-		char buffer[1024];
-
-		printf ("The booking of %d Flight\n" , i);
-
 		//////////////////////////////Data////////////////////////////////////////////////////
 
 
 			printf ("\nFrom?\n");
 			printf ("\nPlease enter full capital Name with first uppercase letter\n");
 
-			scanf("%s",From);
+			scanf("%s",From[i][0]);
 
 			 fp = fopen(file1, "r");
 			    if (fp == NULL)
@@ -887,44 +883,84 @@ void Multiple()
 			    }
 
 
-			printf ("\nDay ? xx\n");
-			scanf("%d",&day);
-			printf ("\nMonth ? xx\n");
-			scanf("%d",&month);
-			printf ("\nYear ? xxxx\n");
-			scanf("%d",&year);
-			printf ("\nHour ? xx\n");
-			scanf("%d",&hours);
+					printf ("\nGoing Day ? xx\n");
+					scanf("%d",&day);
+					printf ("\nGoing Month ? xx\n");
+					scanf("%d",&month);
+					printf ("\nGoing Year ? xxxx\n");
+					scanf("%d",&year);
+					printf ("\nGoing Hour ? xx\n");
+					scanf("%d",&hours);
 
-		//////////////////////////////File////////////////////////////////////////////////////
-			tmp = fopen(file, "r");
-				    if (tmp == NULL)
-				    {
-				        printf("Error opening file %s\n", file);
-				    }
+				//////////////////////////////File////////////////////////////////////////////////////
+					tmp = fopen(file, "r");
+						    if (tmp == NULL)
+						    {
+						        printf("Error opening file %s\n", file);
+						    }
 
-				    char line[256];
-				    int days, months, years, hour;
-				    int n_matches;
-				    char* pattern = "%d;%d;%d;%d";
+						    char line[256];
+						    int days, months, years, hour;
+						    int n_matches;
+						    char* pattern = "%d;%d;%d;%d";
 
-				    while (fgets(line, sizeof(line), tmp)) {
-				    n_matches = sscanf(line, pattern, &days, &months, &years, &hour);
-				    if (n_matches == 4 && days == day && months == month && years == year && hour == hours) {
-				    printf("Found date and time: %02d-%02d-%04d %02d:00\n", days, months, years, hour);
-				    f = 1;
-				    break;
-				    }
-				    }
-				    fclose(tmp);
+						    while (fgets(line, sizeof(line), tmp)) {
+						    n_matches = sscanf(line, pattern, &days, &months, &years, &hour);
+						    if (n_matches == 4 && days == day && months == month && years == year && hour == hours) {
+						    printf("Found date and time: %02d-%02d-%04d %02d:00\n", days, months, years, hour);
+						    f = 1;
+						    break;
+						    }
+						    }
+						    fclose(tmp);
 
 
-				    if (f)
-				    {
-				    	printf("\nThis flight is booked , Try Another Date\n");
-				    	Multiple();
-				    	f=0;
-				    }
+						    if (f)
+						    {
+						    	printf("\nThis flight is booked , Try Another Date\n");
+						    	Roundtrip();
+						    	f=0;
+						    }
+
+
+							printf ("\nComing Back Day ? xx\n");
+							scanf("%d",&day1);
+							printf ("\nComing Back Month ? xx\n");
+							scanf("%d",&month1);
+							printf ("\nComing Back Year ? xxxx\n");
+							scanf("%d",&year1);
+							printf ("\nComing Back Hour ? xx\n");
+							scanf("%d",&hours1);
+
+						//////////////////////////////File////////////////////////////////////////////////////
+							tmp = fopen(file, "r");
+								    if (tmp == NULL)
+								    {
+								        printf("Error opening file %s\n", file);
+								    }
+
+								    char line1[256];
+								    int days1, months1, years1, hour1;
+								    int n_matches1;
+								    char* pattern1 = "%d;%d;%d;%d";
+
+								    while (fgets(line1, sizeof(line1), tmp)) {
+								    n_matches1 = sscanf(line1, pattern1, &days1, &months1, &years1, &hour1);
+								    if (n_matches1 == 4 && days1 == day1 && months1 == month1 && years1 == year1 && hour1 == hours1) {
+								    printf("Found date and time: %02d-%02d-%04d %02d:00\n", days1, months1, years1, hour1);
+								    f = 1;
+								    break;
+								    }
+								    }
+								    fclose(tmp);
+
+
+								    if (f)
+								    {
+								    	printf("\nThis flight is booked , Try Another Date\n");
+								    	Roundtrip();
+								    	f=0;
+								    }
 
 
 		//////////////////////////////Money////////////////////////////////////////////////////
@@ -936,7 +972,7 @@ void Multiple()
 				if (check == 0)
 				{
 					printf ("Error\n");
-					Multiple();
+					Roundtrip();
 				}
 
 				else
@@ -949,29 +985,53 @@ void Multiple()
 
 				Prices();
 
-				printf ("Enter your degree\n (Economy: 1 , Premium Economy: 2 , Business: 3 ,  First class: 4)\n");
+				printf ("Enter your Going degree\n (Economy: 1 , Premium Economy: 2 , Business: 3 ,  First class: 4)\n");
 
 				scanf ("%s",degree);
 				ch = atoi(degree);
 
 				switch (ch)
 				{
-				case 1:  money[i-1] = (check * 1000) + (check1 *500);
+				case 1:  money = (check * 1000) + (check1 *500);
 				break;
 
-				case 2:  money[i-1] = (check * 2000) + (check1 *1000);
+				case 2:  money = (check * 2000) + (check1 *1000);
 				break;
 
-				case 3:  money[i-1] = (check * 5000) + (check1 *3000);
+				case 3:  money = (check * 5000) + (check1 *3000);
 				break;
 
-				case 4:  money[i-1] = (check * 10000) + (check1 *6500);
+				case 4:  money = (check * 10000) + (check1 *6500);
 				break;
 				}
 
+				printf ("Enter your Coming Back degree\n (Economy: 1 , Premium Economy: 2 , Business: 3 ,  First class: 4)\n");
 
-		        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %lld \n" , From , To , day , month , year , hours , money[i-1]);
+				scanf ("%s",degree1);
+				ch1 = atoi(degree1);
 
+				switch (ch1)
+				{
+				case 1:  money1 = (check * 1000) + (check1 *500);
+				break;
+
+				case 2:  money1 = (check * 2000) + (check1 *1000);
+				break;
+
+				case 3:  money1 = (check * 5000) + (check1 *3000);
+				break;
+
+				case 4:  money1 = (check * 10000) + (check1 *6500);
+				break;
+				}
+
+				total = money+money1;
+
+
+		        printf ("\nThe Going trip money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money);
+		        printf ("\nThe Coming Back trip money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , To , From , day1 , month1 , year1 , hours1 , money1);
+
+		        printf ("\nThe total money is %d\n" ,total);
 
 			    printf ("\nDo you want to continue Y/N\n");
 
@@ -995,13 +1055,15 @@ void Multiple()
 			    		        printf("Error opening file %s\n", file);
 			    		}
 			    		fprintf(fp, "\n%02d;%02d;%04d;%02d", day, month, year, hours);
+			    		fprintf(fp, "\n%02d;%02d;%04d;%02d", day1, month1, year1, hours1);
 
 			    	fclose(tmp);
-			    	total +=money[i-1];
+
+			    	Website();
+
+
 	}
 
-    printf ("\nThe total money of the trip is %lld \n" , total);
-    Website();
 
 }
 

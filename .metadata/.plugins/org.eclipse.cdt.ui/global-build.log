@@ -10646,3 +10646,191 @@ Invoking: MacOS X C Linker
 gcc  -o "Booking_System"  ./main.o   
 Finished building target: Booking_System
  
+07:21:52 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:799:14: warning: format specifies type 'char *' but the argument has type 'int' [-Wformat]
+        scanf ("%c",no_of_cities);
+                ~~  ^~~~~~~~~~~~
+../main.c:799:14: warning: variable 'no_of_cities' is uninitialized when used here [-Wuninitialized]
+        scanf ("%c",no_of_cities);
+                    ^~~~~~~~~~~~
+../main.c:794:19: note: initialize the variable 'no_of_cities' to silence this warning
+        char no_of_cities;
+                         ^
+                          = '\0'
+2 warnings generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:22:10 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:22:22 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:22:54 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:22:56 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:23:54 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:23:57 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:30:22 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:30:24 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:36:25 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:795:12: warning: variable 'total' set but not used [-Wunused-but-set-variable]
+        int f=0,i,total=0;
+                  ^
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:36:52 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:795:12: warning: variable 'total' set but not used [-Wunused-but-set-variable]
+        int f=0,i,total=0;
+                  ^
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:39:25 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c:795:12: warning: variable 'total' set but not used [-Wunused-but-set-variable]
+        int f=0,i,total=0;
+                  ^
+1 warning generated.
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:40:01 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+07:40:05 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:40:57 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+07:46:07 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+08:02:05 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+08:04:27 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+Building file: ../main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Booking_System
+Invoking: MacOS X C Linker
+gcc  -o "Booking_System"  ./main.o   
+Finished building target: Booking_System
+ 
+08:20:11 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+08:20:19 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+08:20:22 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.
+08:20:48 **** Incremental Build of configuration Debug for project Booking_System ****
+make all 
+make: Nothing to be done for `all'.

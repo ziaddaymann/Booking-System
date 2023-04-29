@@ -970,7 +970,7 @@ void Multiple()
 				}
 
 
-		        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %lld \n" , From , To , day , month , year , hours , money[i-1]);
+		        printf ("\nThe total money from %s to %s at %02d-%02d-%04d %02d:00 is %d \n" , From , To , day , month , year , hours , money[i-1]);
 
 
 			    printf ("\nDo you want to continue Y/N\n");
@@ -997,10 +997,14 @@ void Multiple()
 			    		fprintf(fp, "\n%02d;%02d;%04d;%02d", day, month, year, hours);
 
 			    	fclose(tmp);
-			    	total +=money[i-1];
 	}
 
-    printf ("\nThe total money of the trip is %lld \n" , total);
+	for (int y = 1;y<=check;y++)
+	{
+		total +=money[i-1];
+	}
+
+    printf ("\nThe total money of the trip is %d \n" , total);
     Website();
 
 }
