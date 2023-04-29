@@ -64,7 +64,7 @@ void Register ()
 	char mail[50];
 	char pass[50];
 	char buffer[1024];
-	char file[256] = "/Users/ziadayman/Desktop/Booking Site/Book1.txt";
+	char file[256] = "C:/Users/imann/Desktop/Booking-System-Mybranch/Book1.txt";
 
 //////////////////////////////Mail////////////////////////////////////////////////////
 	printf ("Please enter your Email \n");
