@@ -16,7 +16,7 @@ Welcome to our booking system! This is a System that allows users to book flight
 ## Setup
 
 1. Clone the repository.
-git clone https://github.com/username/repo.git
+git clone https://github.com/ziaddaymann/Booking-System
 
 2. Change the path of .txt files
 3. Write your changes and send pull request
