@@ -1,4 +1,4 @@
-05:32:45 **** Incremental Build of configuration Debug for project Booking_System ****
+06:25:41 **** Incremental Build of configuration Debug for project Booking_System ****
 make all 
 Building file: ../main.c
 Invoking: GCC C Compiler
@@ -11,5 +11,5 @@ gcc  -o "Booking_System"  ./main.o
 Finished building target: Booking_System
  
 
-05:32:46 Build Finished. 0 errors, 0 warnings. (took 1s.43ms)
+06:25:41 Build Finished. 0 errors, 0 warnings. (took 530ms)
 
